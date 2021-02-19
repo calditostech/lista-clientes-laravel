@@ -1,4 +1,4 @@
 
   TELA DE CLIENTES
 
-  <img src="../assets/img/tela.png">
+  <img src="assets/img/tela.png">
