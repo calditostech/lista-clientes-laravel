@@ -46,12 +46,14 @@
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
-      <td>Ricardo Moreira</td>
-      <td>rmoreira787@gmail.com</td>
-      <td>45454553333</td>
-      <td>12982445566</td>
-      <td>São Jose dos campos</td>
+    @foreach($clientes as $cliente)
+      <td scope="row">{{$cliente->id}}</td>
+      <td>{{$cliente->nome}}</td>
+      <td>{{$cliente->email}}</td>
+      <td>{{$cliente->cpf}}</td>
+      <td>{{$cliente->telefone}}</td>
+      <td>{{$cliente->localidade}}</td>
+      @endforeach
     </tr>
   </tbody>
 </table>
